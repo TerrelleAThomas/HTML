@@ -1,0 +1,359 @@
+/* 	
+	Author:Terrelle Thomas 
+	File Name:styles.css 
+	Date:09/13/2021 
+*/
+
+/* CSS Reset Style Rule */
+body, header,nav,main,footer,img, h5, h6,section, figcaption, figure, video{
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+
+/* Styles Rule for Images/Video */
+img, video{
+	max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+	display: block;
+	border-radius: 50px;
+  
+}
+
+video{
+	
+}
+
+/* Styles for header content */
+h6{
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	color: #800080;
+	font-family: 'Oswald', sans-serif;
+	
+}
+
+h5{
+ 	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	color:  #000000;
+	font-family: 'Oswald', sans-serif; 
+}
+
+
+/* Styles Rules for Navigation Area */
+nav{
+	background-color: #C1BDB3;
+	padding: 1%;
+	margin-bottom: 1%;
+}
+nav:hover{
+	color:#0000FF; 
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	text-align: center;
+}
+nav li {
+  display: inline-block;
+  font-size: 1.40em;
+	font-weight: bold;
+	font-style: italic;
+	font-family:'Oswald', sans-serif;
+	border-top: 1px solid #ff
+}
+ 
+nav li a {
+    display: block;
+    color: #323031;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav li a:hover{
+	color: #000;
+	background-color: #fff;
+	transform: scale(1.3);
+}
+
+*{
+  box-sizing: border-box;
+
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Styles Rule for Main Content */
+main{
+    padding:2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.50em;
+    font-weight: bold;
+}
+
+main p{
+	  font-size: 1.25em;
+	  text-align: center;
+    text-decoration: bold;
+}
+
+#Quote {
+  text-align: center;
+  font-size: 0.75em;
+  text-shadow: 6px 6px 10px #FFA500;
+  text-decoration: bold;
+  color:#0000FF; 
+  font-family:'Dancing Script', cursive;
+
+}
+
+#Quote2
+{
+  font-size: 1.00em;
+  text-decoration: bold;
+  text-shadow: 6px 6px 10px #323031;
+  color: #0000FF;
+  text-align: center;
+}
+
+#Quote3
+{
+  font-size: 1.00em;
+  text-decoration: bold;
+  text-shadow: 6px 6px 10px #323031;
+  color: #0000FF;
+  text-align: center;
+}
+
+#football {
+  max-width: 100%;
+  display: block; 
+}
+
+#animation img {
+    display: none;
+}
+#animation img:first-child {
+    display: block;
+}
+
+/* Style rules for table */
+
+figure 
+{
+  border: 4px solid #5F5B6B;
+  box-shadow: 5px 5px 9px #3D3B3C;
+  max-width: 100%;
+  margin: 2% auto;
+  opacity:2;
+
+}
+
+figcaption
+{
+  padding: 2%;
+  text-shadow: 6px 6px 10px #800080;
+  text-align: center;
+}
+
+/*Style rules for form elements */
+fieldset, input , textarea{
+  margin: 2%;
+}
+
+fieldset legend{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label{
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit{
+margin: 0 auto;
+display: block;
+padding: 2%;
+background-color: #78593a;
+color: #f6eee4;
+font-size: 1.25em;
+border-radius: 10px;
+}
+/*Fixing the display of he form */
+.form-grid{
+margin: 0 0;
+}
+
+
+/*Style Rule for Links */
+.tel-link{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tel-link a
+{
+    color: #B36A5E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.round
+{
+    color: #B36A5E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link
+{
+    color: #B36A5E;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+/*Style rule for video element */
+video  
+{
+  max-width: 70%;
+}
+
+
+/*Style rules for footer content */
+footer
+{
+		text-align: center;
+		font-size: 1.4em;
+		clear: left;
+		color: #000000;
+		font-weight: bold;
+		font-family: 'Oswald', sans-serif;
+}
+
+/* Media Query for Talebt Viewpoint */
+@media screen and (min-width: 620px), print{
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+.school
+{
+  display: block;
+  display: none;
+}
+
+
+
+/*Tablet Viewport: Style rules for nav area */
+nav li
+{
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+}
+nav li a
+{
+   padding: 0.5em;
+}
+.grid
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+figure
+{
+  grid-column: 1 /span 2; 
+}
+
+/*Tablet Viewport: Style rule for form element*/
+#form
+  {
+  width: 70%;
+  margin: auto auto;
+  }
+}
+
+/*Media Query for Desktop Viewport.*/
+@media screen and (min-width: 1000px), print{
+/* Desktop Viewport: Style rules for nav area*/
+nav li 
+{
+  font-size:1.5em;
+}
+nav li a
+{
+  padding: 0.5em 1.5em;
+}
+nav li a:hover
+{
+    color: #000;
+	background-color: #fff;
+}
+/* Desktop Viewport: Style rules for main content */
+#welcome
+{
+  font-size: 0.85em;
+  text-decoration: bolder;
+}
+
+/*Desktop Viewport: Style rules for form elements */
+form{
+  width: auto;
+}
+.form-grid
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+
+/* Media Query for Large Desktop Viewports */
+ @media screen and (min-width: 1921px), print{
+body{
+  background: linear-gradient(#FF6347, #A52A2A);
+}
+#welcome{
+  width: 1920px;
+  margin: 0 auto;
+}
+main{
+  background-color: #fff;
+    }
+.grid{
+  grid-template-columns: auto auto auto auto;
+  }
+}
+
+/* Media Query for Print*/
+@media print{
+ 
+body{
+   background-color: #FF6347;
+   color: #A52A2A;
+  } 
+}
+
